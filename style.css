@@ -1,7 +1,9 @@
 *{
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth; /* SCROLL MOVE ATÉ O FRAME SELECIONADO*/
+    box-sizing: border-box;
 }
 
 header{
@@ -10,7 +12,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    position: fixed;
+    width: 100%;
+    top: 0;
+       
 }
 header a{
     color: white;
@@ -34,4 +39,42 @@ header a:hover{ /* MUDAR A COR DO FUNDO AO PASSAR O MOUSE*/
     transition: transform .3s;
     
     
+}
+
+section{
+    border: 1px solid black;
+    height: calc(100vh - 7rem);
+    padding: 3rem;
+}
+
+main{
+    margin-top: 7rem;
+}
+
+section h2{
+    text-align: center;
+}
+
+section#formularios{
+    text-align: center;
+    padding: 10px;
+}
+
+table, th, td{
+    border: 2px solid black ;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    
+    background-color: #04a722;
+}
+section#tabelas{
+    text-align: center;
+}
+
+thead{
+    background-color: #082D0F;
+}
+
+div#listadiv{
+    display: flex;
 }
