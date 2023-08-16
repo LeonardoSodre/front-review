@@ -7,7 +7,7 @@
 }
 
 header{
-    background: #082D0F;
+    background: #0494a7;
     height: 7rem;
     display: flex;
     justify-content: center;
@@ -15,6 +15,7 @@ header{
     position: fixed;
     width: 100%;
     top: 0;
+    
        
 }
 header a{
@@ -65,16 +66,41 @@ table, th, td{
     border-collapse: collapse;
     padding: 0.5rem;
     
-    background-color: #04a722;
+    background-color: #0494a7;
 }
 section#tabelas{
     text-align: center;
 }
 
 thead{
-    background-color: #082D0F;
+    background-color: #0494a7;
 }
 
-div#listadiv{
+form div {
     display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+form input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 0;
+}
+
+#formularios > div {
+    background: #4ab5e6;
+    max-width: 30rem;
+    padding: 2rem;
+    margin-inline: auto;
+    margin-top: 3rem;
+    border-radius: 15px;
+}
+
+#listas > div, #tabelas > div {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 3rem;
 }
